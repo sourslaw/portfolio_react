@@ -4,8 +4,7 @@ function ContactPage() {
 
   return (
 	  <section>
-		{/* <div>contact</div> */}
-		<ContactContent />
+			<ContactContent />
 	  </section>
   );
 }

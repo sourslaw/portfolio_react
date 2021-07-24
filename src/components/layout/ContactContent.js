@@ -2,7 +2,7 @@ import React from "react";
 import Iframe from 'react-iframe'
 
 import { Container, Row, Card, Col, Image } from "react-bootstrap";
-import classes from './ContactContent.module.css';
+import classes from './HeadingComponent.module.css';
 // import classes from './AboutContent.module.css';
 
 
@@ -10,7 +10,7 @@ function ContactContent() {
 
   return (
   <Container>
-		<div className={classes.headingCard} >conatct</div>
+		<div className={classes.headingCard}>conatct</div>
 
     <Row>
 			<Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />

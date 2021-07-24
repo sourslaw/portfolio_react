@@ -1,7 +1,11 @@
+import ResumeContent from '../components/layout/ResumeContent';
+
 function ResumePage() {
 
   return (
-    <div>resume</div>
+		<section>
+			<ResumeContent />
+		</section>
   );
 }
 

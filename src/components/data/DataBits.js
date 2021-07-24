@@ -53,3 +53,5 @@ const experience = [
 		when: '2016-2017'
 	}
 ];
+
+export default { about, projects, experience };
