@@ -1,39 +1,29 @@
 import{ useState, useEffect } from 'react';
-
 import ResumeContent from '../components/layout/ResumeContent';
 
 
-
 function ResumePage() {
-
-  // return (
-	// 	<section>
-	// 		<ResumeContent />
-	// 	</section>
-  // );
-
 	const [isLoading, setIsLoading] = useState(true);
   const [loadedContent, setLoadedContent] = useState([]);
 
   useEffect(() => {
-    setIsLoading(true);
+    setIsLoading(true); // initially set to true . .
 
     fetch(
-      'experience.json'
+      'experience.json' // fetching from public folder. it just looks there
     ).then(response => {
       return response.json();
     }).then((data) => {
       const contents = [];
 
-      for (const key in data) {
+      for (const key in data) { //loop through . . .
         const content = {
           id: key,
           ...data[key] // spread data
         };
-        contents.push(content); // use helper
+        contents.push(content); // use content as helper
       }
-
-      setIsLoading(false);
+      setIsLoading(false); // . . now false
       setLoadedContent(contents); // here is the data now . . .
     });
   }, []);
@@ -47,10 +37,9 @@ function ResumePage() {
   }
 
   return (
-      <section>
-          {/* <h1>all meetups page</h1> */}
-              <ResumeContent contents={loadedContent}/>
-      </section>
+		<section>
+			<ResumeContent contents={loadedContent}/>
+		</section>
   );
 }
 

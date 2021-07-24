@@ -1,13 +1,10 @@
 import React from "react";
 import Iframe from 'react-iframe'
-
 import { Container, Row, Card, Col, Image } from "react-bootstrap";
 import classes from './HeadingComponent.module.css';
-// import classes from './AboutContent.module.css';
 
 
 function ContactContent() {
-
   return (
   <Container>
 		<div className={classes.headingCard}>conatct</div>

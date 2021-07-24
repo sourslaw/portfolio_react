@@ -1,10 +1,8 @@
-// import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React from "react";
 
 
 function Navigation() {
-
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -24,7 +22,6 @@ function Navigation() {
       </Container>
     </Navbar>
   );
-
 }
 
 export default Navigation;

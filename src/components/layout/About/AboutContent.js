@@ -4,7 +4,6 @@ import classes from './AboutContent.module.css';
 
 
 function AboutContent() {
-
   return (
     <Container>
       <Row>

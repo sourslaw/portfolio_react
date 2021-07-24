@@ -3,7 +3,6 @@ import React from "react";
 
 
 function Footer() {
-
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -17,7 +16,6 @@ function Footer() {
       </Container>
     </Navbar>
   );
-
 }
 
 export default Footer;

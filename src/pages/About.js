@@ -1,7 +1,7 @@
 import AboutContent from '../components/layout/About/AboutContent';
 
-function AboutPage() {
 
+function AboutPage() {
   return (
     <section>
       <div>aboout</div>

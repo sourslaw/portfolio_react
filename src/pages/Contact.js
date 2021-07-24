@@ -1,7 +1,7 @@
 import ContactContent from '../components/layout/ContactContent';
 
-function ContactPage() {
 
+function ContactPage() {
   return (
 	  <section>
 			<ContactContent />
