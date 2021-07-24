@@ -1,0 +1,8 @@
+.headingCard {
+	display: flex;
+	align-items: center;
+
+	/* background-color: antiquewhite; */
+	height: 7rem;
+	margin-bottom: 3rem;
+}

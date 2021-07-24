@@ -1,7 +1,12 @@
+import ContactContent from '../components/layout/ContactContent';
+
 function ContactPage() {
 
   return (
-    <div>contact</div>
+	  <section>
+		{/* <div>contact</div> */}
+		<ContactContent />
+	  </section>
   );
 }
 
