@@ -1,7 +1,12 @@
+import AboutContent from '../components/layout/About/AboutContent';
+
 function AboutPage() {
 
   return (
-    <div>aboout</div>
+    <section>
+      <div>aboout</div>
+      <AboutContent />
+    </section>
   );
 }
 

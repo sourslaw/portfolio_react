@@ -1,0 +1,11 @@
+.image {
+  filter: grayscale(100%);
+
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* border: solid 1rem black; */
+  filter: drop-shadow(5px 5px 15px rgb(212, 209, 209));
+}
