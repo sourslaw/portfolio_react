@@ -1,0 +1,7 @@
+.mainRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: cneter;
+  /* margin-left: 100px; */
+}

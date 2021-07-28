@@ -1,6 +1,6 @@
 import React from "react";
 import Iframe from 'react-iframe'
-import { Container, Row, Card, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import classes from './HeadingComponent.module.css';
 
 

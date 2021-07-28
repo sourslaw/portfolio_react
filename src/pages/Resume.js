@@ -23,8 +23,12 @@ function ResumePage() {
         };
         contents.push(content); // use content as helper
       }
+      
       setIsLoading(false); // . . now false
       setLoadedContent(contents); // here is the data now . . .
+
+      console.log(contents);
+
     });
   }, []);
 

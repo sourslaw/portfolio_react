@@ -1,0 +1,16 @@
+.mainRow {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 100px; */
+}
+
+.ul {
+  list-style: none;
+}
+
+
+.card {
+  margin: 1rem;
+}
