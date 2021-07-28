@@ -1,6 +1,7 @@
 .container {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  height: 45rem;
 }
 
 .image {
@@ -29,4 +30,8 @@
 }
 .col2 {
   background-color: bisque;
+  padding-top: 3rem;
+}
+.button {
+  margin: .25rem;
 }

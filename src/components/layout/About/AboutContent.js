@@ -17,8 +17,8 @@ function AboutContent() {
           <div>full stack developer</div>
           <h1>scott lawan</h1>
           <p>I am a creative and passionate information professional and software developer. I am seeking to grow my skill set through new challenges and the creation of thoughtful tools for thoughtful use.</p>
-          <Button variant="outline-secondary">download CV</Button>
-          <Button variant="outline-secondary">contact</Button>
+          <Button variant="outline-secondary" className={classes.button}>download CV</Button>
+          <Button variant="outline-secondary" className={classes.button}>contact</Button>
         </Col>
 
       </Row>
