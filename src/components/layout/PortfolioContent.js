@@ -12,7 +12,7 @@ function PortfolioContent(props) {
 
 			<Row className={classesPort.mainRow}>
 
-        <ul className={classesPort.ul}>
+        <div className={classesPort.ul}>
           {props.contents.map((content) => 
             <PortfolioItem 
               key={content.id}
@@ -22,7 +22,7 @@ function PortfolioContent(props) {
               link={content.link}
             />
           )}
-        </ul>
+        </div>
 
 			</Row>
 

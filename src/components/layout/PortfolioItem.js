@@ -1,29 +1,22 @@
 import React from "react";
-// import Iframe from 'react-iframe'
-import { Card, Button } from "react-bootstrap";
+import { Col, Card, Button } from "react-bootstrap";
 import classesPort from './PortfolioContent.module.css';
 
 
 function PortfolioItem(props) {
   return (
-    <li>
-      <Card style={{ width: '30rem' }} className={classesPort.card}>
-        <Card.Img variant="top" src={props.image} />
+
+    // <Col className={classesPort.col}>
+      <Card style={{ width: '35rem' }} className={classesPort.card}>
+        <Card.Img className={classesPort.image}variant="top" src={props.image} />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
-          <Card.Text>
-            {props.description}
-          </Card.Text>
+          <Card.Text>{props.description}</Card.Text>
           <a href={props.link}><Button variant="primary">go to app . . .</Button></a>
         </Card.Body>
       </Card>
+    // </Col>
 
-      {/* <p>{props.title}</p>
-      <p>{props.description}</p>
-      <p>{props.image}</p>
-      <p>{props.link}</p> */}
-
-    </li>
   );
 }
 
