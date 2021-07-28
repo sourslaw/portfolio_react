@@ -6,7 +6,7 @@ import classesPort from './PortfolioContent.module.css';
 function PortfolioItem(props) {
   return (
 
-    // <Col className={classesPort.col}>
+    <Col className={classesPort.col}>
       <Card style={{ width: '35rem' }} className={classesPort.card}>
         <Card.Img className={classesPort.image}variant="top" src={props.image} />
         <Card.Body>
@@ -15,7 +15,7 @@ function PortfolioItem(props) {
           <a href={props.link}><Button variant="primary">go to app . . .</Button></a>
         </Card.Body>
       </Card>
-    // </Col>
+    </Col>
 
   );
 }

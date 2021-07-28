@@ -10,21 +10,35 @@ function PortfolioContent(props) {
 		<Container>
 			<div className={classes.headingCard}>portfolio</div>
 
-			<Row className={classesPort.mainRow}>
+      <div className={classesPort.mainRow}>
+        <Row >
+          <div className={classesPort.ul}>
+            {props.contents.slice(0,2).map((content) => 
+              <PortfolioItem 
+                key={content.id}
+                title={content.title}
+                image={content.image}
+                description={content.description}
+                link={content.link}
+              />
+            )}
+          </div>
+        </Row>
 
-        <div className={classesPort.ul}>
-          {props.contents.map((content) => 
-            <PortfolioItem 
-              key={content.id}
-              title={content.title}
-              image={content.image}
-              description={content.description}
-              link={content.link}
-            />
-          )}
-        </div>
-
-			</Row>
+        <Row >
+          <div className={classesPort.ul}>
+            {props.contents.slice(2,4).map((content) => 
+              <PortfolioItem 
+                key={content.id}
+                title={content.title}
+                image={content.image}
+                description={content.description}
+                link={content.link}
+              />
+            )}
+          </div>
+        </Row>
+      </div>
 
 		</Container>
   );
