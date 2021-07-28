@@ -12,10 +12,26 @@ function ResumeContent(props) {
 
 			<Row className={classesMore.mainRow}>
 
+				<Col>
+					<h1>education</h1>
+					<ul>
+						{props.contents.slice(4,7).map((content) => 
+							<ResumeItem 
+								key={content.id}
+								id={content.id}
+								what={content.what}
+								where={content.where}
+								when={content.when}
+								// description={content.description}
+							/>
+						)}
+					</ul>
+				</Col>
+
 				<Col >
 					<h1>experience</h1>
 					<ul>
-						{props.contents.map((content) => 
+						{props.contents.slice(0,4).map((content) => 
 							<ResumeItem 
 								key={content.id}
 								id={content.id}
@@ -28,10 +44,6 @@ function ResumeContent(props) {
 					</ul>
 				</Col>
 
-				<Col>
-					<h1>education</h1>
-				</Col>
-				
 			</Row>
 
 
