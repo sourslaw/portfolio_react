@@ -1,70 +1,104 @@
-import React from "react";
+import React from 'react';
+// import * as emailjs from 'emailjs-com';
 import Iframe from 'react-iframe'
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Form, Col, Row, Button } from 'react-bootstrap';
 import classes from './HeadingComponent.module.css';
 import classesContact from './ContactContent.module.css';
 
-// import * as emailjs from 'emailjs-com';
 
+const initialFormData = Object.freeze({
+  username: "",
+  email: "",
+  subject: "",
+  message: ""
+});
 
-function ContactContent() {
+export const ContactForm = (props) => {
+  const [formData, updateFormData] = React.useState(initialFormData);
+
+  const sendFeedback = (serviceID, templateId, variables) => {
+    window.emailjs.send(
+      serviceID, templateId,
+      variables
+    ).then(res => {
+      console.log('Email successfully sent!')
+    })
+      .catch(err => console.error('There has been an Error.', err))
+  }
+
+  const handleChange = (e) => {
+    updateFormData({
+      ...formData,
+
+      [e.target.name]: e.target.value.trim()
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert(`Thank you for your message. Your query has been forwarded.`);
+    const templateId = 'template_95qae99';
+    const serviceID = "service_d1gtf6k";
+    sendFeedback(serviceID, templateId, { from_name: formData.name, subject: formData.subject, message: formData.message, email: formData.email })
+
+    console.log(formData);
+  };
+
   return (
-  <Container className={classesContact.container}>
-		<div className={classes.headingCard}>conatct</div>
+    <Container >
+      <div className={classes.headingCard}>conatct</div>
 
-    <Row>
-			<Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
-    </Row>
+      <Row>
+        <Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
+      </Row>
 
-    <Row className={classesContact.contact}>
-			{/* contact shit */}
-			<Col xs lg="3">
+      <Row className={classesContact.contact}>
+        {/* contact shit */}
+        <Col xs lg="3">
+          <div>
+            <i class="fas fa-pager"></i>
+              <p>number</p>
+          </div>
+          <div>
+          <i class="far fa-compass"></i>
+            <p>location</p>
+          </div>
+          <div>
+          <i class="far fa-envelope"></i>
+            <p>email</p>
+          </div>
+        </Col>
 
-				<div>
-					<i class="fas fa-pager"></i>
-						<p>number</p>
-					</div>
-					<div>
-					<i class="far fa-compass"></i>
-						<p>location</p>
-					</div>
-					<div>
-					<i class="far fa-envelope"></i>
-						<p>email</p>
-					</div>
+        <Col>
+          <p>how can i help ?</p>
+          {/* contact form shit */}
+          <Form>
+            <Row>
+              <Col>
+                <Form.Group as={Col} controlId="formGridName">
+                  <Form.Control className="mt-3 mb-3" onChange= {handleChange} name="name" type="name" placeholder="full name" />
+                </Form.Group>
+                <Form.Group as={Col} controlId="formGridEmail">
+                  <Form.Control className="mb-3" onChange= {handleChange} name="email" type="email" placeholder="email" />
+                </Form.Group>
+                <Form.Group as={Col} controlId="formGridMobile">
+                  <Form.Control onChange= {handleChange} name="subject" placeholder="subject" />
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Group as={Col} id="formGridQuery">
+                  <Form.Control className="mb-3" onChange= {handleChange} name="message" as="textarea" placeholder="message" style={{ height: '180px', width: '400px' }} />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Button onClick={handleSubmit} variant="primary" type="submit">submit</Button>
+          </Form >
 
-			</Col>
+        </Col>
+      </Row>
 
-			{/* contact form */}
-			<Col>
-				<p>how can i help ?</p>
-
-				<Form>
-					<Row>
-						<Col >
-							<Form.Control className="mt-3 mb-3" placeholder="full name" />
-							<Form.Control className="mb-3" placeholder="email address" />
-							<Form.Control placeholder="subject" />
-						</Col>
-						<Col>
-							<Form.Control
-								className="mb-3"
-								as="textarea"
-								placeholder="message"
-								style={{ height: '180px', width: '400px' }}
-							/>
-						</Col>
-					</Row>
-					<Button variant="primary" type="submit">
-						Submit
-					</Button>
-				</Form>
-
-			</Col>
-    </Row>
-
-  </Container>
+    </Container>
   );
 }
 
-export default ContactContent;
+export default ContactForm;

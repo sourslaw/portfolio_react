@@ -3,17 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-left: 100px; */
 }
 
 .ul {
-  /* column-count: 2; */
-  /* column-gap: 5px; */
-  /* list-style: none; */
   display: table;
   width: 100%;
 }
-
 
 
 /* item level */
@@ -22,7 +17,6 @@
 
 }
 .card {
-  /* height: 30rem; */
   margin: .5rem;
 }
 .image {
@@ -30,4 +24,8 @@
   height: 375px;
   /* border-radius: 5%; */
   object-fit: cover;
+}
+
+.bottomSpace {
+  margin-bottom: 5rem;
 }
