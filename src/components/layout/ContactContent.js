@@ -4,10 +4,12 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import classes from './HeadingComponent.module.css';
 import classesContact from './ContactContent.module.css';
 
+// import * as emailjs from 'emailjs-com';
+
 
 function ContactContent() {
   return (
-  <Container>
+  <Container className={classesContact.container}>
 		<div className={classes.headingCard}>conatct</div>
 
     <Row>

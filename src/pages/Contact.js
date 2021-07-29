@@ -1,10 +1,12 @@
 import ContactContent from '../components/layout/ContactContent';
 
+import ContactForm from '../components/layout/ContactContentTEST';
 
 function ContactPage() {
   return (
 	  <section>
-			<ContactContent />
+			{/* <ContactContent /> */}
+			<ContactForm />
 	  </section>
   );
 }
