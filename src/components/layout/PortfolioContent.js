@@ -20,6 +20,7 @@ function PortfolioContent(props) {
                 image={content.image}
                 description={content.description}
                 link={content.link}
+                linkTwo={content.linkTwo}
               />
             )}
           </div>
@@ -34,6 +35,7 @@ function PortfolioContent(props) {
                 image={content.image}
                 description={content.description}
                 link={content.link}
+                linkTwo={content.linkTwo}
               />
             )}
           </div>

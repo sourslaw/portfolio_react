@@ -9,23 +9,6 @@
   display: table;
   width: 100%;
 }
-
-
-/* item level */
-.col {
-  display: table-cell;
-
-}
-.card {
-  margin: .5rem;
-}
-.image {
-  width: 100%;
-  height: 375px;
-  /* border-radius: 5%; */
-  object-fit: cover;
-}
-
 .bottomSpace {
   margin-bottom: 5rem;
 }
