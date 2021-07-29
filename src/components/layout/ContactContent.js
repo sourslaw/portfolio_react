@@ -69,7 +69,7 @@ export const ContactForm = (props) => {
           </div>
         </Col>
 
-        <Col>
+        <Col className={classesContact.bottomSpace}>
           <p>how can i help ?</p>
           {/* contact form shit */}
           <Form>

@@ -8,11 +8,12 @@
 	display: flex;
 	align-items: center;
 
-	/* background-color: antiquewhite; */
 	height: 7rem;
-	margin-bottom: 5rem;
 }
-
 .contact {
 	margin: 50px;
+}
+
+.bottomSpace {
+	margin-bottom: 7rem;
 }
