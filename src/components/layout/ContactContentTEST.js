@@ -1,89 +1,75 @@
 import React from 'react';
 import * as emailjs from 'emailjs-com';
 
+import { Form, Col, Button } from 'react-bootstrap';
 
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-// import { Field, Label, Control, Input, Button, Icon, Textarea, Notification } from 'rbx';
+const initialFormData = Object.freeze({
+    username: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
 
-class ContactForm extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: {
-        name: props.name,
-        email: props.email,
-        subject: props.subject,
-        message: props.message
-      }
-    };
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.resetForm = this.resetForm.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-  }
+export const ContactForm = (props) => {
+    const [formData, updateFormData] = React.useState(initialFormData);
 
-  handleSubmit(event) {
-    event.preventDefault();
-    const { name, email, subject, message } = this.state;
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: '/*ME*/',
-      subject,
-      message_html: message,
-    };
-    emailjs.send(
-      'gmail',
-      'template_95qae99',
-       templateParams,
-      'user_SmSyrcsejJHD82DRXhyNr'
-    )
-    this.resetForm();
-  };
+    const sendFeedback = (serviceID, templateId, variables) => {
+        window.emailjs.send(
+            serviceID, templateId,
+            variables
+        ).then(res => {
+            console.log('Email successfully sent!')
+        })
+            .catch(err => console.error('There has been an Error.', err))
+    }
 
-  resetForm() {
-    this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
-  }
+    const handleChange = (e) => {
+        updateFormData({
+          ...formData,
 
-  handleChange(event) {
-    this.setState({ [event.target.name]: event.target.value });
-  }
+          [e.target.name]: e.target.value.trim()
+        });
+      };
 
-  render() {
-    const { name, email, subject, message, sentMessage } = this.state;
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        alert(`Thank you for your message. Your query has been forwarded.`);
+        const templateId = 'template_95qae99';
+        const serviceID = "service_d1gtf6k";
+        sendFeedback(serviceID, templateId, { from_name: formData.name, subject: formData.subject, message: formData.message, email: formData.email })
+
+        console.log(formData);
+      };
 
     return (
-      <Form>
-      <Row>
-        <Col >
-          <Form.Control type="text" className="mt-3 mb-3" placeholder="full name" onChange={this.handleChange} value={this.state.name}/>
-          <Form.Control className="mb-3" placeholder="email address" value={this.email} onChange={this.state.handleChange} />
-          <Form.Control type="text" placeholder="subject" value={this.subject} onChange={this.state.handleChange} />
-        </Col>
-        <Col>
-          <Form.Control
-            type="text"
-            className="mb-3"
 
-            as="textarea"
-            placeholder="message"
-            style={{ height: '180px', width: '400px' }}
-            value={this.state.message}
-            onChange={this.handleChange}
-          />
-        </Col>
-      </Row>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
-    );
-  }
+        <Form>
+            <Form.Group as={Col} controlId="formGridName">
+                <Form.Label>Name*</Form.Label>
+                <Form.Control onChange= {handleChange} name="name" type="name" placeholder="Name" />
+            </Form.Group>
+
+            <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Label>Email*</Form.Label>
+                <Form.Control onChange= {handleChange} name="email" type="email" placeholder="Enter email"
+                />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridMobile">
+                <Form.Label>subject</Form.Label>
+                <Form.Control onChange= {handleChange} name="subject" placeholder="" />
+            </Form.Group>
+            <Form.Group as={Col} id="formGridQuery">
+                <Form.Label>Query*</Form.Label>
+                <Form.Control onChange= {handleChange} name="message" as="textarea" rows={3} />
+            </Form.Group>
+
+            <Button onClick={handleSubmit} variant="primary" type="submit">
+                Submit
+                </Button>
+        </Form >
+
+    )
 }
 
 export default ContactForm;
