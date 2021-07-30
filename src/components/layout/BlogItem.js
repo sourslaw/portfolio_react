@@ -12,7 +12,7 @@ const BlogItem = (props) => {
             <img src={`${thumbnail}`} className={classes.Image} alt={truncateText(cleanTitle(title), 0, 60)}></img>
         </div>
         <div className={classes.TDContainer}>
-            <h3>{truncateText(cleanTitle(title), 0, 60)}</h3><br />
+            <h3>{truncateText(cleanTitle(title), 0, 20)}</h3><br />
             <p>{truncateText(toText(content), 48, 300) + "..."}</p><br />
             <h4>{convertDate(pubDate)}</h4>
         </div>
