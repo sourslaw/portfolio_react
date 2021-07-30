@@ -5,33 +5,30 @@ import BlogItem from './BlogItem';
 import classes from './BlogItem.module.css'
 
 const BlogContent = () => {
-    // const mediumUrl = "https://medium.com/feed/@joshuagauthreaux"
-    const rss2json = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40lawanasaurus";
-    // const rss2json = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40joshuagauthreaux";
+  const rss2json = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40lawanasaurus";
+  const [myBlog, setMyBlog] = useState([]);
 
-    const [myBlog, setMyBlog] = useState([]);
-
-    useEffect(() => {
-        fetch(rss2json)
-            .then(res => res.json())
-            .then(data => {
-                setMyBlog(data)
-                console.log(data)
-            })
-    }, [rss2json]);
-
-    function displayBlogs() {
-      console.log(myBlog)
-      return myBlog.items && myBlog.items.map(blog => {
-          return blog.categories.length > 0 && <BlogItem key={blog.pubDate} blogData={blog} />
+  useEffect(() => {
+    fetch(rss2json)
+      .then(res => res.json())
+      .then(data => {
+        setMyBlog(data)
+        console.log(data)
       })
-    }
+  }, [rss2json]);
 
-    return (
-      <div className={classes.BlogsContainer}>
-        {displayBlogs()}
-      </div>
-    );
+  function displayBlogs() {
+    console.log(myBlog)
+    return myBlog.items && myBlog.items.map(blog => {
+      return <BlogItem key={blog.pubDate} blogData={blog} />
+    })
+  }
+
+  return (
+    <div className={classes.BlogsContainer}>
+      {displayBlogs()}
+    </div>
+  );
 }
 
 export default BlogContent;

@@ -17,9 +17,9 @@ const BlogItem = (props) => {
             <h4>{convertDate(pubDate)}</h4>
         </div>
     </a>
-
   }
 
+  // a little sanitizing from these functions . . .
   function cleanTitle(checkTitle) {
     checkTitle = checkTitle.replace("amp;", "");
     return checkTitle
@@ -42,9 +42,9 @@ const BlogItem = (props) => {
   }
 
   return (
-      <div className={classes.PostContainer}>
-          {blogPost()}
-      </div>
+    <div className={classes.PostContainer}>
+      {blogPost()}
+    </div>
   );
 }
 
