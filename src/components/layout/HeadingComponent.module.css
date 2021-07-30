@@ -1,8 +1,16 @@
 .headingCard {
 	display: flex;
 	align-items: center;
-
 	/* background-color: antiquewhite; */
-	height: 7rem;
+	height: 9rem;
 	margin-bottom: 1rem;
+	font-family: Shrikhand;
+	font-size: 3rem;
+	background-color: #eee2df;
+	padding-left: 7rem;
+}
+
+.container {
+	max-width: 100%;
+	padding: 0;
 }

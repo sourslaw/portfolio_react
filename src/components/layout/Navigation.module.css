@@ -1,0 +1,15 @@
+.font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.logo {
+  font-family: Shrikhand;
+  background-color: #c97c5d;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+  height: 57px;
+  width: 57px;
+  margin: 15px;
+}

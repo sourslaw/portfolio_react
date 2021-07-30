@@ -1,4 +1,16 @@
+.font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
 .bitsCopyright {
   padding-top: 15px;
   font-size: .9rem;
+}
+
+.footer {
+  transition: all .35s;
+}
+.footer:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }

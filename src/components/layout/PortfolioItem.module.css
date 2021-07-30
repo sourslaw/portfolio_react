@@ -1,7 +1,3 @@
-
-
-
-
 .col {
   display: table-cell;
 }
@@ -16,7 +12,7 @@
 .image {
   width: 100%;
   height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1627573002203-abedce71ddb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("https://images.unsplash.com/photo-1463171515643-952cee54d42a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
   background-position: center;
   background-size: cover;
   transition: all 1.25s;

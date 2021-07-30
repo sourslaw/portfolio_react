@@ -1,12 +1,12 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import React from "react";
-
+import classes from './Navigation.module.css'
 
 function Navigation() {
   return (
     <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">me-site</Navbar.Brand>
+      <Container className={classes.font}>
+        <Navbar.Brand href="/" className={classes.logo}><i class="fas fa-hat-wizard fa-2x"></i></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

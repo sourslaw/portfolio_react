@@ -1,19 +1,17 @@
-/* .container {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  height: 45rem;
-} */
-
 .headingCard {
 	display: flex;
 	align-items: center;
-
 	height: 7rem;
 }
-.contact {
-	margin: 50px;
+.map {
+	/* margin-top: 5rem; */
+	margin: 5rem 3rem 0;
 }
-
+.contact {
+	margin: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
 .bottomSpace {
 	margin-bottom: 7rem;
 }

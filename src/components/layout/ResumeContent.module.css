@@ -3,6 +3,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: cneter;
-  /* margin-left: 100px; */
-  margin-bottom: 5rem;
+  margin: 0 3rem 5rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
