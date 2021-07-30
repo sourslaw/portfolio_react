@@ -9,7 +9,7 @@ function PortfolioContent(props) {
   return (
 		<Container fluid className={classes.container}>
 			<div className={classes.headingCard}>portfolio</div>
-      <Container>
+      <Container className={classesPort.container}>
         <div className={classesPort.mainRow}>
           <Row >
             <div className={classesPort.ul}>

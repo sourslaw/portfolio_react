@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // bootstrap css
 import AboutPage from './pages/About';
 import ResumePage from './pages/Resume';
 import PortfolioPage from './pages/Portfolio';
+import BlogPage from './pages/Blog';
 import ContactPage from './pages/Contact';
 
 import Layout from './components/layout/Layout.js';
@@ -24,6 +25,10 @@ function App() {
 
         <Route path='/portfolio'>
           <PortfolioPage />
+        </Route>
+
+        <Route path='/blog'>
+          <BlogPage />
         </Route>
 
         <Route path='/contact'>

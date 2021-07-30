@@ -11,5 +11,10 @@
   shape-outside: circle(50%);
   height: 57px;
   width: 57px;
-  margin: 15px;
+  margin: 17px;
+}
+.logo:hover {
+  transition: all 1.15s;
+  transform: scale(1.2);
+  cursor: pointer;
 }

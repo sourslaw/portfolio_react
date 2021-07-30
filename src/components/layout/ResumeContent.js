@@ -9,7 +9,7 @@ function ResumeContent(props) {
   return (
 		<Container fluid className={classes.container}>
 			<div className={classes.headingCard}>resume</div>
-			<Container>
+			<Container className={classesMore.container}>
 				<Row className={classesMore.mainRow}>
 					<Col xs lg="4">
 						<h1>education</h1>
