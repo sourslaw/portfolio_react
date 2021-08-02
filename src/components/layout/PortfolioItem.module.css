@@ -24,6 +24,11 @@
   transform: scale(1.15);
   cursor: pointer;
 }
+.description {
+  color: #615d6f;
+  font-size: .85rem;
+  line-height: 1.15rem;
+}
 .buttons {
   margin: .20rem;
 }

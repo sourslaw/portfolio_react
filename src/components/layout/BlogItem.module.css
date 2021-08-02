@@ -28,10 +28,12 @@
   margin-bottom: 1rem;
 }
 .desc {
+  color: #615d6f;
   font-size: .85rem;
+  line-height: 1.15rem;
 }
 .date {
-  font-size: .75rem;
+  font-size: .70rem;
   color: #615d6f;
 }
 

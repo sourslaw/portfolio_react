@@ -1,16 +1,13 @@
 import React from "react";
-// import Iframe from 'react-iframe'
-// import { Container, Row, Col } from "react-bootstrap";
-
+import classes from './ResumeItem.module.css';
 
 function ResumeItem(props) {
   return (
     <li>
-      <p>{props.what}</p>
-      <p>{props.where}</p>
-      <p>{props.when}</p>
-      <p>{props.description}</p>
-      <p>{props.testOne}</p>
+      <p className={classes.what}>{props.what}</p>
+      <p className={classes.where}>{props.where}</p>
+      <p className={classes.when}>{props.when}</p>
+      <p className={classes.description}>{props.description}</p>
     </li>
   );
 }

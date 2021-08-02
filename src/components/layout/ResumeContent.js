@@ -11,7 +11,7 @@ function ResumeContent(props) {
 			<div className={classes.headingCard}>resume</div>
 			<Container className={classesMore.container}>
 				<Row className={classesMore.mainRow}>
-					<Col xs lg="4">
+					<Col className={classesMore.colBump} xs lg="4">
 						<h1>education</h1>
 						<ul>
 							{props.contents.slice(4,7).map((content) => 

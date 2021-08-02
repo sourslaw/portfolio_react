@@ -13,7 +13,7 @@ function PortfolioItem(props) {
         </div>
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
-          <Card.Text>{props.description}</Card.Text>
+          <Card.Text className={classes.description}>{props.description}</Card.Text>
           <a href={props.link} target="_blank"><Button className={classes.buttons} variant="outline-secondary">view app</Button></a>
           <a href={props.linkTwo} target="_blank"><Button className={classes.buttons} variant="outline-secondary">view GitHub</Button></a>
         </Card.Body>

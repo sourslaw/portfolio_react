@@ -1,12 +1,13 @@
 import Navigation from './Navigation';
 import Footer from './Footer';
+import classes from './Layout.module.css';
 
 
 function Layout(props) {
   return(
     <div>
       <Navigation />
-      <main>
+      <main className={classes.pageContainer}>
         {props.children}
       </main>
       <Footer />
