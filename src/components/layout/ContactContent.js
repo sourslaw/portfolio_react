@@ -56,21 +56,27 @@ export const ContactForm = (props) => {
         </Row>
         <Row className={classesContact.contact}>
           <Col xs lg="3">
-            <div>
-              <i class="fas fa-pager"></i>
+            <div > 
+              <span className={classesContact.icons}>
+                <i class="fas fa-pager"></i>
+              </span>
               <p>number</p>
             </div>
             <div>
-              <i class="far fa-compass"></i>
+              <span className={classesContact.icons}>
+                <i class="far fa-compass"></i>
+              </span>
               <p>location</p>
             </div>
             <div>
-              <i class="far fa-envelope"></i>
+              <span className={classesContact.icons}>
+                <i class="far fa-envelope"></i>
+              </span>
               <p>email</p>
             </div>
           </Col>
           <Col className={classesContact.bottomSpace}>
-            <p>how can i help ?</p>
+            <p>reach out . . .</p>
             <Form id="form">
               <Row>
                 <Col>
