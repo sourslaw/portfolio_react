@@ -7,13 +7,16 @@ import classesContact from './ContactContent.module.css';
 
 
 const initialFormData = Object.freeze({
-  username: "",
+  name: "",
   email: "",
   subject: "",
   message: ""
 });
 
 export const ContactForm = (props) => {
+  // gets form by id to be reset after handleSubmit. maybe not the react way . . .
+  const formBad = document.getElementById("form");
+
   const [formData, updateFormData] = React.useState(initialFormData);
 
   const sendFeedback = (serviceID, templateId, variables) => {
@@ -35,11 +38,12 @@ export const ContactForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert(`Thank you for your message. Your query has been forwarded.`);
+    alert(`thank you for your message. your query has been forwarded.`);
+    formBad.reset();
+
     const templateId = 'template_95qae99';
     const serviceID = "service_d1gtf6k";
     sendFeedback(serviceID, templateId, { from_name: formData.name, subject: formData.subject, message: formData.message, email: formData.email })
-
     console.log(formData);
   };
 
@@ -67,7 +71,7 @@ export const ContactForm = (props) => {
           </Col>
           <Col className={classesContact.bottomSpace}>
             <p>how can i help ?</p>
-            <Form>
+            <Form id="form">
               <Row>
                 <Col>
                   <Form.Group as={Col} controlId="formGridName">
@@ -88,7 +92,6 @@ export const ContactForm = (props) => {
               </Row>
               <Button onClick={handleSubmit} variant="outline-secondary" type="submit">submit</Button>
             </Form >
-
           </Col>
         </Row>
       </Container>
