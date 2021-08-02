@@ -4,7 +4,7 @@ import { Container, Button, Row, Col, Image } from "react-bootstrap";
 import BlogItem from './BlogItem';
 // import classes from './BlogItem.module.css'
 import classes from './BlogContent.module.css';
-import classesPort from './PortfolioContent.module.css';
+import classesBlog from './BlogContent.module.css';
 import classesHead from './HeadingComponent.module.css';
 
 
@@ -33,10 +33,10 @@ const BlogContent = () => {
 		<Container fluid className={classesHead.container}>
 			<div className={classesHead.headingCard}>blog</div>
 
-			<Container className={classesPort.container}>
-				<div className={classesPort.mainRow}>
+			<Container className={classesBlog.container}>
+				<div className={classesBlog.mainRow}>
 					<Row >
-						<div className={classesPort.ul}>
+						<div className={classesBlog.ul}>
 
 							{displayBlogs()}
 

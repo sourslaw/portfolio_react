@@ -4,7 +4,6 @@
 .card {
   margin: .5rem;
 }
-
 .imageParent {
   height: 300px;
   overflow: hidden;
@@ -22,7 +21,6 @@
   transform: scale(1.2);
   cursor: pointer;
 }
-
 .buttons {
   margin: .20rem;
 }

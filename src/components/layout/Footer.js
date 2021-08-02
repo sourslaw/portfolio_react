@@ -5,7 +5,7 @@ import classes from './Footer.module.css';
 
 function Footer() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className={classes.navBarMargin} bg="light" expand="lg">
       <Container className={classes.font}>
         <Nav >
           <Nav.Link className={classes.footer} href='https://github.com/sourslaw'><i class="fab fa-github-alt fa-2x"></i></Nav.Link>

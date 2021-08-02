@@ -25,7 +25,7 @@ function PortfolioContent(props) {
               )}
             </div>
           </Row>
-          <Row className={classesPort.bottomSpace}>
+          <Row>
             <div className={classesPort.ul}>
               {props.contents.slice(2,4).map((content) => 
                 <PortfolioItem 
