@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Col, Card, Button } from "react-bootstrap";
 import classes from './BlogItem.module.css'
 
 
@@ -14,9 +14,9 @@ const BlogItem = (props) => {
             <a href={`${link}`} target="_blank"><Card.Img className={classes.image} variant="top" src={`${thumbnail}`} /></a>
           </div>
           <Card.Body>
-            <Card.Title>{truncateText(cleanTitle(title), 0, 20)}</Card.Title>
-            <Card.Text>{truncateText(toText(content), 48, 300) + "..."}</Card.Text>
-            <Card.Text>{convertDate(pubDate)}</Card.Text>
+            <Card.Title className={classes.title}>{truncateText(cleanTitle(title), 0, 20)}</Card.Title>
+            <Card.Text className={classes.desc}>{truncateText(toText(content), 48, 300) + "..."}</Card.Text>
+            <Card.Text className={classes.date}>{convertDate(pubDate)}</Card.Text>
             <a href={`${link}`} target="_blank"><Button className={classes.buttons} variant="outline-secondary">view on medium</Button></a>
           </Card.Body>
         </Card>
