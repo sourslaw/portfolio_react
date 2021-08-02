@@ -1,5 +1,5 @@
 import{ useState, useEffect } from 'react';
-import PortfolioContent from '../components/layout/PortfolioContent';
+import PortfolioContent from '../components/layout/Portfolio/PortfolioContent';
 
 function PortfolioPage() {
   const [isLoading, setIsLoading] = useState(true);

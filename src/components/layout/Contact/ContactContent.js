@@ -2,7 +2,7 @@ import React from 'react';
 // import * as emailjs from 'emailjs-com';
 import Iframe from 'react-iframe'
 import { Container, Form, Col, Row, Button } from 'react-bootstrap';
-import classes from './HeadingComponent.module.css';
+import classes from '../HeadingComponent.module.css';
 import classesContact from './ContactContent.module.css';
 
 

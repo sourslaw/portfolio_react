@@ -1,5 +1,5 @@
 import{ useState, useEffect } from 'react';
-import ResumeContent from '../components/layout/ResumeContent';
+import ResumeContent from '../components/layout/Resume/ResumeContent';
 
 
 function ResumePage() {

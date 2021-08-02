@@ -1,4 +1,4 @@
-import BlogContent from '../components/layout/BlogContent';
+import BlogContent from '../components/layout/Blog/BlogContent';
 
 
 function BlogPage() {

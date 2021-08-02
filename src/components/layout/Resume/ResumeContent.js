@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import classes from './HeadingComponent.module.css';
+import classes from '../HeadingComponent.module.css';
 import classesMore from './ResumeContent.module.css';
 import ResumeItem from "./ResumeItem";
 

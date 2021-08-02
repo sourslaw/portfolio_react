@@ -3,9 +3,9 @@ import { Container, Button, Row, Col, Image } from "react-bootstrap";
 
 import BlogItem from './BlogItem';
 // import classes from './BlogItem.module.css'
-import classes from './BlogContent.module.css';
+// import classes from './Blog/BlogContent.module.css';
 import classesBlog from './BlogContent.module.css';
-import classesHead from './HeadingComponent.module.css';
+import classesHead from '../HeadingComponent.module.css';
 
 
 
