@@ -1,5 +1,5 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
 import React from "react";
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import classes from './Navigation.module.css'
 
 function Navigation() {

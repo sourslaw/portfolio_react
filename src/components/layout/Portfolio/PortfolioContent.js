@@ -1,8 +1,8 @@
 import React from "react";
+import PortfolioItem from "./PortfolioItem";
 import { Container, Row } from "react-bootstrap";
 import classes from '../HeadingComponent.module.css';
 import classesPort from './PortfolioContent.module.css';
-import PortfolioItem from "./PortfolioItem";
 
 
 function PortfolioContent(props) {
