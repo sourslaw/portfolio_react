@@ -6,25 +6,77 @@ import ResumeItem from "./ResumeItem";
 
 
 function ResumeContent(props) {
-  return (
+  // return (
+	// 	<Container fluid className={classes.container}>
+	// 		<div className={classes.headingCard}>resume</div>
+	// 		<Container className={classesMore.container}>
+	// 			<Row className={classesMore.mainRow}>
+	// 				<Col className={classesMore.colBump} xs lg="4">
+	// 					<h1>education</h1>
+	// 					<ul>
+	// 						{props.contents.slice(4,7).map((content) => 
+	// 							<ResumeItem 
+	// 								key={content.id}
+	// 								id={content.id}
+	// 								what={content.what}
+	// 								where={content.where}
+	// 								when={content.when}
+	// 							/>
+	// 						)}
+	// 					</ul>
+	// 				</Col>
+	// 				<Col >
+	// 					<h1>experience</h1>
+	// 					<ul>
+	// 						{props.contents.slice(0,4).map((content) => 
+	// 							<ResumeItem 
+	// 								key={content.id}
+	// 								id={content.id}
+	// 								what={content.what}
+	// 								where={content.where}
+	// 								when={content.when}
+	// 								description={content.description}
+	// 							/>
+	// 						)}
+	// 					</ul>
+	// 				</Col>
+	// 			</Row>
+	// 		</Container>
+	// 	</Container>
+	// );
+	
+	// TEST
+	return (
 		<Container fluid className={classes.container}>
 			<div className={classes.headingCard}>resume</div>
 			<Container className={classesMore.container}>
 				<Row className={classesMore.mainRow}>
-					<Col className={classesMore.colBump} xs lg="4">
-						<h1>education</h1>
-						<ul>
-							{props.contents.slice(4,7).map((content) => 
-								<ResumeItem 
-									key={content.id}
-									id={content.id}
-									what={content.what}
-									where={content.where}
-									when={content.when}
-								/>
-							)}
-						</ul>
-					</Col>
+
+					{/* <Col className={classesMore.dunnoThis} > */}
+					{/* <Row> */}
+						{/* <Col className={classesMore.colOne} xs lg="1">
+							<p>col One</p>
+
+						</Col> */}
+
+						<Col className={classesMore.colBump}  xs lg="4">
+							<h1 className={classesMore.h1Bump}>education</h1>
+							{/* <ul> */}
+								{props.contents.slice(4,7).map((content) => 
+									<ResumeItem 
+										key={content.id}
+										id={content.id}
+										what={content.what}
+										where={content.where}
+										when={content.when}
+									/>
+								)}
+							{/* </ul> */}
+						</Col>
+					{/* </Row> */}
+					{/* </Col> */}
+
+
 					<Col >
 						<h1>experience</h1>
 						<ul>

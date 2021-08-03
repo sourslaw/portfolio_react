@@ -1,4 +1,4 @@
-.container {
+/* .container {
   margin-top: 5rem;
 }
 .mainRow {
@@ -12,5 +12,31 @@
   font-weight: 100;
 }
 .colBump {
-  margin-right: 1.5rem;
+	margin-right: 1.5rem;
+	background-color: antiquewhite;
+} */
+
+/* TEST */
+.container {
+  margin-top: 5rem;
+}
+.mainRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: cneter;
+  margin: 0 3rem 5rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+.colOne {
+	background-color: greenyellow;
+}
+.colBump {
+	margin-right: 2.5rem;
+	/* background-color: antiquewhite; */
+}
+.h1Bump {
+	margin-left: .6rem;
 }

@@ -7,7 +7,7 @@
   color: #615d6f;
   font-size: .85rem;
   line-height: 1.15rem;
-  margin-bottom: .35rem;
+  margin-bottom: .75rem;
 }
 .when {
   color: #615d6f;
@@ -20,4 +20,14 @@
   font-size: .85rem;
   line-height: 1.15rem;
   margin-bottom: 1.35rem;
+}
+
+/* TEST */
+
+.col1 {
+	/* background-color: hotpink; */
+	width: 5px;
+	display: flex;
+	flex: 0 0 5.75rem;
+	justify-content: flex-end;
 }
