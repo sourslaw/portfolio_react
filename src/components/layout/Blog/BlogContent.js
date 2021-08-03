@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Button, Row, Col, Image } from "react-bootstrap";
-
 import BlogItem from './BlogItem';
-// import classes from './BlogItem.module.css'
-// import classes from './Blog/BlogContent.module.css';
+import { Container, Row } from "react-bootstrap";
 import classesBlog from './BlogContent.module.css';
 import classesHead from '../HeadingComponent.module.css';
-
 
 
 const BlogContent = () => {
