@@ -1,30 +1,30 @@
 [ 
 	{
-		"what": "Full Stack Web Developer Bootcamp Student",
+		"what": "Full Stack Web Development Bootcamp Student",
 		"where": "University of California, Davis",
 		"when": "2021",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+		"description": "Applying Agile methodolgoy to learning a full stack consisting of JavaScript, HTML, CSS, Mongo, Node, Express, and React"
 	},
 	{
 		"what": "Digital Preservation Manager",
 		"where": "California Revealed | California State Library",
 		"when": "2018-2021",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+		"description": "Managed and advised partnering institutions on digital file management needs, designed and built workflows to support the project’s ability to handle born-digital objects. Created Python based scripts to expedite processing and management of digital files and file packages"
 	},
 	{
 		"what": "Digital Archivist",
 		"where": "Colorado State Archives",
 		"when": "2016-2018",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+		"description": "Developed policies and workflows, documented procedures, managed assistants, developed the Colorado State Archives’ Digital Preservation Policy. Performed mass metadata collation, normalization, and transformation for ingest into the State Archives’ content management system"
 	},
 	{
 		"what": "Digital Archivist",
 		"where": "Media Archeology Lab | University of Colorado, Boulder",
 		"when": "2016-2017",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+		"description": "Obtained, cataloged, and preserved the bitstreams of digital artistic media stored on a variety of obsolete media formats through use of digital forensics tools"
 	},
 	{
-		"what": "Certificate, Full Stack Web Developer Bootcamp",
+		"what": "Certificate, Full Stack Web Development",
 		"where": "University of California, Davis",
 		"when": "2021",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"

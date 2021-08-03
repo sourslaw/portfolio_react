@@ -21,11 +21,7 @@
   line-height: 1.15rem;
   margin-bottom: 1.35rem;
 }
-
-/* TEST */
-
 .col1 {
-	/* background-color: hotpink; */
 	width: 5px;
 	display: flex;
 	flex: 0 0 5.75rem;
