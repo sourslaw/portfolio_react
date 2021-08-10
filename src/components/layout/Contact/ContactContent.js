@@ -65,7 +65,7 @@ export const ContactForm = (props) => {
               <span className={classesContact.icons}>
                 <i class="far fa-compass"></i>
               </span>
-              <p>united state, moutain time (mt)</p>
+              <p>united states, mountain time (mt)</p>
             </div>
             <div>
               <span className={classesContact.icons}>
