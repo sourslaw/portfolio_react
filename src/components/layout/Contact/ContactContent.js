@@ -1,6 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe'
-import { Container, Form, Col, Row, Button } from 'react-bootstrap';
+import { Container, Form, Col, Row, Button, NavLink } from 'react-bootstrap';
 import classes from '../HeadingComponent.module.css';
 import classesContact from './ContactContent.module.css';
 
@@ -55,23 +55,24 @@ export const ContactForm = (props) => {
         </Row>
         <Row className={classesContact.contact}>
           <Col xs lg="3">
-            <div > 
+            {/* <div > 
               <span className={classesContact.icons}>
                 <i class="fas fa-pager"></i>
               </span>
               <p>number</p>
-            </div>
+            </div> */}
             <div>
               <span className={classesContact.icons}>
                 <i class="far fa-compass"></i>
               </span>
-              <p>location</p>
+              <p>united state, moutain time (mt)</p>
             </div>
             <div>
               <span className={classesContact.icons}>
                 <i class="far fa-envelope"></i>
               </span>
-              <p>email</p>
+              <p>Lawanscott@gmail.com</p>
+              {/* <NavLink><a href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></NavLink> */}
             </div>
           </Col>
           <Col className={classesContact.bottomSpace}>

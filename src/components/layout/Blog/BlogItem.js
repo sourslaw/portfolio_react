@@ -11,13 +11,13 @@ const BlogItem = (props) => {
       <Col>
         <Card style={{ width: '55rem' }} className={classes.card}>
           <div className={classes.imageParent}>
-            <a href={`${link}`} target="_blank"><Card.Img className={classes.image} variant="top" src={`${thumbnail}`} /></a>
+            <a href={`${link}`} target="_blank" rel="noreferrer"><Card.Img className={classes.image} variant="top" src={`${thumbnail}`} /></a>
           </div>
           <Card.Body>
             <Card.Title className={classes.title}>{truncateText(cleanTitle(title), 0, 20)}</Card.Title>
             <Card.Text className={classes.desc}>{truncateText(toText(content), 48, 300) + "..."}</Card.Text>
             <Card.Text className={classes.date}>{convertDate(pubDate)}</Card.Text>
-            <a href={`${link}`} target="_blank"><Button className={classes.buttons} variant="outline-secondary">view on medium</Button></a>
+            <a href={`${link}`} target="_blank" rel="noreferrer"><Button className={classes.buttons} variant="outline-secondary">view on medium</Button></a>
           </Card.Body>
         </Card>
       </Col>
