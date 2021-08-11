@@ -1,6 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe'
-import { Container, Form, Col, Row, Button, NavLink } from 'react-bootstrap';
+import { Container, Form, Col, Row, Button } from 'react-bootstrap';
 import classes from '../HeadingComponent.module.css';
 import classesContact from './ContactContent.module.css';
 
@@ -65,7 +65,7 @@ export const ContactForm = (props) => {
               <span className={classesContact.icons}>
                 <i class="far fa-compass"></i>
               </span>
-              <p>united states, mountain time (mt)</p>
+              <p>united states, mountain time</p>
             </div>
             <div>
               <span className={classesContact.icons}>
