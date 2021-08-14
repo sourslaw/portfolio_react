@@ -22,6 +22,10 @@
   background-position: center;
   background-size: cover;
   transition: all 1.25s;
+
+  /* for safari . . . */
+  -webkit-transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 }
 .imageParent:hover .image,
 .imageParent:focus .image {
