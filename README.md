@@ -1,4 +1,5 @@
 # Scott Lawan Professional Portfolio
+![alt text](public/screenshot.gif)
 
 ## Description
 
