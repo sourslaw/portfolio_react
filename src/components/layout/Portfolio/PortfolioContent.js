@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioItem from "./PortfolioItem";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import classes from '../HeadingComponent.module.css';
 import classesPort from './PortfolioContent.module.css';
 
@@ -12,7 +12,7 @@ function PortfolioContent(props) {
       <Container className={classesPort.container}>
         <div className={classesPort.mainRow}>
           <Row >
-            <div className={classesPort.ul}>
+            <Col sm={6} className={classesPort.ul}>
               {props.contents.slice(0,2).map((content) => 
                 <PortfolioItem 
                   key={content.id}
@@ -23,10 +23,10 @@ function PortfolioContent(props) {
                   linkTwo={content.linkTwo}
                 />
               )}
-            </div>
+            </Col>
           </Row>
           <Row>
-            <div className={classesPort.ul}>
+            <Col sm={6} className={classesPort.ul}>
               {props.contents.slice(2,4).map((content) => 
                 <PortfolioItem 
                   key={content.id}
@@ -37,7 +37,7 @@ function PortfolioContent(props) {
                   linkTwo={content.linkTwo}
                 />
               )}
-            </div>
+            </Col>
           </Row>
         </div>
       </Container>

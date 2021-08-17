@@ -19,6 +19,13 @@
   font-weight: 100;
 	font-size: .80rem;
 }
+.link {
+	text-decoration: none;
+	color: gray;
+}
+.link:hover {
+	color: rgb(83, 80, 80);
+}
 .bottomSpace {
 	margin-bottom: 7rem;
 }

@@ -49,12 +49,13 @@ export const ContactForm = (props) => {
   return (
     <Container fluid className={classes.container}>
       <div className={classes.headingCard}>contact</div>
+
       <Container>
         <Row className={classesContact.map}>
           <Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
         </Row>
         <Row className={classesContact.contact}>
-          <Col xs lg="3">
+          <Col xs lg={3} xl={3}>
             {/* <div > 
               <span className={classesContact.icons}>
                 <i class="fas fa-pager"></i>
@@ -71,7 +72,7 @@ export const ContactForm = (props) => {
               <span className={classesContact.icons}>
                 <i class="far fa-envelope"></i>
               </span>
-              <p>Lawanscott@gmail.com</p>
+              <p><a className={classesContact.link} href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></p>
               {/* <NavLink><a href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></NavLink> */}
             </div>
           </Col>
@@ -79,7 +80,7 @@ export const ContactForm = (props) => {
             <p>reach out . . .</p>
             <Form id="form">
               <Row>
-                <Col>
+                <Col >
                   <Form.Group as={Col} controlId="formGridName">
                     <Form.Control className="mt-3 mb-3" onChange= {handleChange} name="name" type="name" placeholder="full name" />
                   </Form.Group>
