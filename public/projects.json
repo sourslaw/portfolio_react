@@ -26,5 +26,19 @@
 		"image": "https://github.com/sourslaw/06_Weather_Dashboard/raw/main/Assets/Images/screenshot.png",
 		"link": "https://sourslaw.github.io/06_Weather_Dashboard/",
 		"linkTwo": "https://github.com/sourslaw/06_Weather_Dashboard"
+	},
+	{
+		"title": "Employee Tracker",
+		"description": "[Javascript] [Inquirer.js] [MySql]",
+		"image": "https://github.com/sourslaw/Employee_Tracker/raw/main/assets/images/screenshot.png",
+		"link": "https://github.com/sourslaw/Employee_Tracker#installation",
+		"linkTwo": "https://github.com/sourslaw/Employee_Tracker"
+	},
+	{
+		"title": "Team Profile Generator",
+		"description": "[Javascript] [Inquirer.js]",
+		"image": "https://github.com/sourslaw/Team_Profile_Generator/blob/main/assets/images/screenshot.png?raw=true",
+		"link": "https://github.com/sourslaw/Team_Profile_Generator#installation",
+		"linkTwo": "https://github.com/sourslaw/Team_Profile_Generator"
 	}
 ]
