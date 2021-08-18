@@ -46,124 +46,66 @@ export const ContactForm = (props) => {
     console.log(formData);
   };
 
-//   return (
-//     <Container fluid className={classes.container}>
-//       <div className={classes.headingCard}>contact</div>
+	return (
+		<Container fluid className={classes.container}>
+			<div className={classes.headingCard}>contact</div>
 
-//       <Container>
-//         <Row className={classesContact.map}>
-//           <Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
-//         </Row>
-//         <Row className={classesContact.contact}>
-//           <Col xs lg={3} xl={3}>
-//             {/* <div > 
-//               <span className={classesContact.icons}>
-//                 <i class="fas fa-pager"></i>
-//               </span>
-//               <p>number</p>
-//             </div> */}
-//             <div>
-//               <span className={classesContact.icons}>
-//                 <i class="far fa-compass"></i>
-//               </span>
-//               <p>united states, mountain time</p>
-//             </div>
-//             <div>
-//               <span className={classesContact.icons}>
-//                 <i class="far fa-envelope"></i>
-//               </span>
-//               <p><a className={classesContact.link} href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></p>
-//               {/* <NavLink><a href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></NavLink> */}
-//             </div>
-//           </Col>
-//           <Col className={classesContact.bottomSpace}>
-//             <p>reach out . . .</p>
-//             <Form id="form">
-//               <Row>
-//                 <Col >
-//                   <Form.Group as={Col} controlId="formGridName">
-//                     <Form.Control className="mt-3 mb-3" onChange= {handleChange} name="name" type="name" placeholder="full name" />
-//                   </Form.Group>
-//                   <Form.Group as={Col} controlId="formGridEmail">
-//                     <Form.Control className="mb-3" onChange= {handleChange} name="email" type="email" placeholder="email" />
-//                   </Form.Group>
-//                   <Form.Group as={Col} controlId="formGridMobile">
-//                     <Form.Control onChange= {handleChange} name="subject" placeholder="subject" />
-//                   </Form.Group>
-//                 </Col>
-//                 <Col>
-//                   <Form.Group as={Col} id="formGridQuery">
-//                     <Form.Control className="mb-3" onChange= {handleChange} name="message" as="textarea" placeholder="message" style={{ height: '180px', width: '400px' }} />
-//                   </Form.Group>
-//                 </Col>
-//               </Row>
-//               <Button onClick={handleSubmit} variant="outline-secondary" type="submit">submit</Button>
-//             </Form >
-//           </Col>
-//         </Row>
-//       </Container>
-//     </Container>
-//   );
-// }
-
-
-// TESTING FOR RES:PONSIVENESS
-return (
-	<Container fluid className={classes.container}>
-		<div className={classes.headingCard}>contact</div>
-
-		<Container>
-			<Row className={classesContact.map}>
-				<Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
-			</Row>
-			<Row className={classesContact.contact}>
-				<Col xs lg={3} xl={3} className={classesContact.col1}>
-					<div>
-						<span className={classesContact.icons}>
-							<i class="far fa-compass"></i>
-						</span>
-						<p>united states, mountain time</p>
-					</div>
-					<div>
-						<span className={classesContact.icons}>
-							<i class="far fa-envelope"></i>
-						</span>
-						<p><a className={classesContact.link} href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></p>
-						{/* <NavLink><a href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></NavLink> */}
-					</div>
-				</Col>
-				<Col className={classesContact.bottomSpace}>
-					{/* <p>reach out . . .</p> */}
-					<Form id="form">
+			<Container>
+				<Row className={classesContact.map}>
+					<Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
+				</Row>
+				<Row className={classesContact.contact}>
+					<Col xs lg={3}>
 						<Row>
-							<Col xs={12} lg={5} className={classesContact.col2}>
-							<p>reach out . . .</p>
-
-								<Form.Group as={Col} controlId="formGridName">
-									<Form.Control className="mt-3 mb-3" onChange= {handleChange} name="name" type="name" placeholder="full name" />
-								</Form.Group>
-								<Form.Group as={Col} controlId="formGridEmail">
-									<Form.Control className="mb-3" onChange= {handleChange} name="email" type="email" placeholder="email" />
-								</Form.Group>
-								<Form.Group as={Col} controlId="formGridMobile">
-									<Form.Control onChange= {handleChange} name="subject" placeholder="subject" />
-								</Form.Group>
+							<Col lg={2}>
+								<span className={classesContact.icons}>
+									<i class="far fa-compass"></i>
+								</span>
 							</Col>
-							<Col className={classesContact.col3}>
-								<Form.Group as={Col} id="formGridQuery">
-									<Form.Control className="mb-3" onChange= {handleChange} name="message" as="textarea" placeholder="message" style={{ height: '175px', marginTop: '1rem' }}  />
-								</Form.Group>
+							<Col className={classesContact.col1B}>
+								<p>united states, mountain time</p>
 							</Col>
 						</Row>
-						<Button onClick={handleSubmit} variant="outline-secondary" type="submit">submit</Button>
-					</Form >
-				</Col>
-			</Row>
+						<Row>
+							<Col lg={2}>
+								<span className={classesContact.icons}>
+									<i class="far fa-envelope"></i>
+								</span>
+							</Col>
+							<Col className={classesContact.col1B}>
+								<p><a className={classesContact.link} href="mailto:lawanscott@gmail.com" alt="">Lawanscott@gmail.com</a></p>
+							</Col>
+						</Row>
+					</Col>
+					
+					<Col className={classesContact.bottomSpace}>
+						<Form id="form">
+							<Row>
+								<Col xs={12} lg={5}>
+								<p>please reach out . . .</p>
+									<Form.Group as={Col} controlId="formGridName">
+										<Form.Control className="mt-3 mb-3" onChange= {handleChange} name="name" type="name" placeholder="full name" />
+									</Form.Group>
+									<Form.Group as={Col} controlId="formGridEmail">
+										<Form.Control className="mb-3" onChange= {handleChange} name="email" type="email" placeholder="email" />
+									</Form.Group>
+									<Form.Group as={Col} controlId="formGridMobile">
+										<Form.Control onChange= {handleChange} name="subject" placeholder="subject" />
+									</Form.Group>
+								</Col>
+								<Col>
+									<Form.Group as={Col} id="formGridQuery">
+										<Form.Control className="mb-3" onChange= {handleChange} name="message" as="textarea" placeholder="message" style={{ height: '175px', marginTop: '1rem' }}  />
+									</Form.Group>
+								</Col>
+							</Row>
+							<Button onClick={handleSubmit} variant="outline-secondary" type="submit">submit</Button>
+						</Form >
+					</Col>
+				</Row>
+			</Container>
 		</Container>
-	</Container>
-);
+	);
 }
-
-
 
 export default ContactForm;

@@ -9,6 +9,7 @@ function ResumeContent(props) {
 	return (
 		<Container fluid className={classes.container}>
 			<div className={classes.headingCard}>resume</div>
+
 			<Container className={classesMore.container}>
 				<Row className={classesMore.mainRow}>
 					<Col className={classesMore.colBump}  xs lg="4">
@@ -38,6 +39,7 @@ function ResumeContent(props) {
 					</Col>
 				</Row>
 			</Container>
+			
 		</Container>
   );
 }
