@@ -82,7 +82,7 @@ export const ContactForm = (props) => {
 						<Form id="form">
 							<Row>
 								<Col xs={12} lg={5}>
-								<p>please reach out . . .</p>
+								<h5>please reach out . . .</h5>
 									<Form.Group as={Col} controlId="formGridName">
 										<Form.Control className="mt-3 mb-3" onChange= {handleChange} name="name" type="name" placeholder="full name" />
 									</Form.Group>
