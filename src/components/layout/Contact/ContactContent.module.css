@@ -29,3 +29,15 @@
 .bottomSpace {
 	margin-bottom: 7rem;
 }
+
+
+/* for testing */
+.col1 {
+	background-color: aqua;
+}
+.col2 {
+	background-color: burlywood;
+}
+.col3 {
+	background-color: darkcyan;
+}
