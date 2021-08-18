@@ -10,7 +10,7 @@ function AboutContent() {
 
         <Col xs lg="4" className={classes.col1}>
           <div className={classes.imageParent}> 
-            <Image className={classes.image} src="https://images.unsplash.com/photo-1626881255770-2397375aad8d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1232&q=80/" alt="of self" />
+            <Image className={classes.image} src="https://github.com/sourslaw/02_Professional_Portfolio/blob/main/assets/images/profile_IMG_3242.JPG?raw=true" alt="of self" />
           </div>
         </Col>
 
