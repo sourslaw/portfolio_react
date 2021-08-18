@@ -19,7 +19,8 @@ function PortfolioContent(props) {
                   key={content.id}
                   title={content.title}
                   image={content.image}
-                  description={content.description}
+									description={content.description}
+									descriptionTwo={content.descriptionTwo}
                   link={content.link}
                   linkTwo={content.linkTwo}
                 />
@@ -33,7 +34,8 @@ function PortfolioContent(props) {
                   key={content.id}
                   title={content.title}
                   image={content.image}
-                  description={content.description}
+									description={content.description}
+									descriptionTwo={content.descriptionTwo}
                   link={content.link}
                   linkTwo={content.linkTwo}
                 />
@@ -47,7 +49,8 @@ function PortfolioContent(props) {
                   key={content.id}
                   title={content.title}
                   image={content.image}
-                  description={content.description}
+									description={content.description}
+									descriptionTwo={content.descriptionTwo}
                   link={content.link}
                   linkTwo={content.linkTwo}
                 />
