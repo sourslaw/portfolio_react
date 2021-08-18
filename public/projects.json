@@ -2,7 +2,7 @@
 	{
 		"title": "Mechanique Blog",
 		"description": "[MySql] [Express] [Handlebars] [Node]",
-		"descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		"descriptionTwo": "Web Application for a user who wants a blog site so that they can publish articles, blog posts, and their thoughts and opinions",
 		"image": "https://github.com/sourslaw/Technology_Blog/blob/main/assets/images/screenshot.png?raw=true",
 		"link": "https://salty-plateau-85850.herokuapp.com/",
 		"linkTwo": "https://github.com/sourslaw/Technology_Blog"
@@ -10,7 +10,7 @@
 	{
 		"title": "Poké Pound",
 		"description": "[MySql] [Express] [Handlebars] [Node]",
-		"descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		"descriptionTwo": "Web application for a user who wants to adopt or rehome a pet efficiently",
 		"image": "https://user-images.githubusercontent.com/77472152/125383002-8e09ee80-e34b-11eb-8c03-284b0052976a.png",
 		"link": "https://pokemonstore1.herokuapp.com/",
 		"linkTwo": "https://github.com/sourslaw/Project2"
@@ -18,7 +18,7 @@
 	{
 		"title": "Find A Beer",
 		"description": "[Javascript] [various APIs] [Pure.css]",
-		"descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		"descriptionTwo": "Web application for a traveler who wants to see the local microbreweries in a city as well as the nearby restrooms so that they may plan an outing",
 		"image": "https://github.com/sourslaw/Project_One/raw/main/assets/images/screenshot.png",
 		"link": "https://sourslaw.github.io/Project_One/",
 		"linkTwo": "https://github.com/sourslaw/Project_One"
@@ -26,7 +26,7 @@
 	{
 		"title": "Weather Dashboard",
 		"description": "[Javascript] [Bootstrap]",
-		"descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		"descriptionTwo": "Web application for a traveler who wants to see the weather outlook for multiple cities so that they are able to plan a trip accordingly",
 		"image": "https://github.com/sourslaw/06_Weather_Dashboard/raw/main/Assets/Images/screenshot.png",
 		"link": "https://sourslaw.github.io/06_Weather_Dashboard/",
 		"linkTwo": "https://github.com/sourslaw/06_Weather_Dashboard"
@@ -34,7 +34,7 @@
 	{
 		"title": "Employee Tracker",
 		"description": "[Javascript] [Inquirer.js] [MySql]",
-		"descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		"descriptionTwo": "CLI for business owners who want to be able to view and manage their departments, roles, and employees so that they can organize and plan their business",
 		"image": "https://github.com/sourslaw/Employee_Tracker/raw/main/assets/images/screenshot.png",
 		"link": "https://github.com/sourslaw/Employee_Tracker#installation",
 		"linkTwo": "https://github.com/sourslaw/Employee_Tracker"
@@ -42,7 +42,7 @@
 	{
 		"title": "Team Profile Generator",
 		"description": "[Javascript] [Inquirer.js]",
-		"descriptionTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		"descriptionTwo": "CLI for a manager who wants to generate a webpage that displays their team's basic info so that they have quick access to their emails and GitHub profiles",
 		"image": "https://github.com/sourslaw/Team_Profile_Generator/blob/main/assets/images/screenshot.png?raw=true",
 		"link": "https://github.com/sourslaw/Team_Profile_Generator#installation",
 		"linkTwo": "https://github.com/sourslaw/Team_Profile_Generator"
