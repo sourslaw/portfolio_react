@@ -4,6 +4,9 @@ import { Container, Form, Col, Row, Button } from 'react-bootstrap';
 import classes from '../HeadingComponent.module.css';
 import classesContact from './ContactContent.module.css';
 
+import validator from 'validator';
+
+
 
 const initialFormData = Object.freeze({
   name: "",
@@ -35,15 +38,21 @@ export const ContactForm = (props) => {
     });
   };
 
-  const handleSubmit = (e) => {
+
+	const handleSubmit = (e) => {
     e.preventDefault()
-    alert(`thank you for your message. your query has been forwarded.`);
-    formBad.reset();
 
     const templateId = 'template_95qae99';
     const serviceID = "service_d1gtf6k";
-    sendFeedback(serviceID, templateId, { from_name: formData.name, subject: formData.subject, message: formData.message, email: formData.email })
-    console.log(formData);
+		let email = formData.email;
+		if (validator.isEmail(email)) {
+      sendFeedback(serviceID, templateId, { from_name: formData.name, subject: formData.subject, message: formData.message, email: formData.email });
+			// console.log(formData);
+			alert(`thank you for your message. your query has been forwarded.`);
+			formBad.reset();
+    } else {
+      alert('Enter valid Email!');
+    }
   };
 
 	return (
