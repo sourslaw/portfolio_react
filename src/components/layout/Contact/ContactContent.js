@@ -51,7 +51,7 @@ export const ContactForm = (props) => {
 			alert(`thank you for your message. your query has been forwarded.`);
 			formBad.reset();
     } else {
-      alert('Enter valid Email!');
+      alert('please enter a valid email . . .');
     }
   };
 
@@ -89,6 +89,7 @@ export const ContactForm = (props) => {
 					
 					<Col className={classesContact.bottomSpace}>
 						<Form id="form">
+						{/* <Form noValidate validated={validated} id="form"> */}
 							<Row>
 								<Col xs={12} lg={5}>
 								<h5>please reach out . . .</h5>
