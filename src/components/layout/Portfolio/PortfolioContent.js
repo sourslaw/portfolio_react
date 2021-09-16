@@ -57,6 +57,21 @@ function PortfolioContent(props) {
               )}
             </Col>
           </Row>
+          <Row >
+            <Col className={classesPort.ul}>
+              {props.contents.slice(6,7).map((content) => 
+                <PortfolioItem 
+                  key={content.id}
+                  title={content.title}
+                  image={content.image}
+									description={content.description}
+									descriptionTwo={content.descriptionTwo}
+                  link={content.link}
+                  linkTwo={content.linkTwo}
+                />
+              )}
+            </Col>
+          </Row>
         </div>
       </Container>
 		</Container>
