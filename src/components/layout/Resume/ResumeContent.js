@@ -14,7 +14,7 @@ function ResumeContent(props) {
 				<Row className={classesMore.mainRow}>
 					<Col className={classesMore.colBump}  xs lg="4">
 						<h1 className={classesMore.h1Bump}>education</h1>
-						{props.contents.slice(4,7).map((content) => 
+						{props.contents.slice(5,8).map((content) => 
 							<ResumeItem 
 								key={content.id}
 								id={content.id}
@@ -26,7 +26,7 @@ function ResumeContent(props) {
 					</Col>
 					<Col >
 						<h1>experience</h1>
-						{props.contents.slice(0,4).map((content) => 
+						{props.contents.slice(0,5).map((content) => 
 							<ResumeItem 
 								key={content.id}
 								id={content.id}
