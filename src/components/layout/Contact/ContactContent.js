@@ -61,7 +61,7 @@ export const ContactForm = (props) => {
 
 			<Container>
 				<Row className={classesContact.map}>
-					<Iframe src="https://www.google.com/maps/embed/v1/place?q=los+alamos,+nm&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
+					<Iframe src="https://www.google.com/maps/embed/v1/place?q=minneapolis,+mn&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" />
 				</Row>
 				<Row className={classesContact.contact}>
 					<Col xs lg={3}>
@@ -72,7 +72,7 @@ export const ContactForm = (props) => {
 								</span>
 							</Col>
 							<Col className={classesContact.col1B}>
-								<p>united states, mountain time</p>
+								<p>minneapolis, mn, united states</p>
 							</Col>
 						</Row>
 						<Row>

@@ -10,14 +10,14 @@ function AboutContent() {
 
         <Col xs lg="4" className={classes.col1}>
           <div className={classes.imageParent}> 
-            <Image className={classes.image} src="https://github.com/sourslaw/02_Professional_Portfolio/blob/main/assets/images/profile_IMG_3242.JPG?raw=true" alt="of self" />
+            <Image className={classes.image} src="https://images.unsplash.com/photo-1535082049017-5a7b43f3bcef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2748&q=80" alt="of self" />
           </div>
         </Col>
 
         <Col xs lg="6" className={classes.col2}>
-          <div>full stack developer</div>
+          <div>Libraries Application Developer</div>
           <h1 className={classes.font}>scott lawan</h1>
-          <p>Full stack web developer. Graduate degree and professional experience in information science and data management. Proven track record in team-building, mentorship, and project management. Passionate about problem solving, collaboration, and continuous learning.</p>
+          <p>Graduate degree and professional experience in information science and data management. Proven track record in team-building, mentorship, and project management. Passionate about problem solving, collaboration, and continuous learning.</p>
           <a href="https://drive.google.com/file/d/12NNTVp1QhOEINZRFQ2smujnbTpq2hhE9/view?usp=sharing" target="blank"><Button variant="outline-secondary" className={classes.button}>download CV</Button></a>
           <a href='/contact'><Button variant="outline-secondary" className={classes.button}>contact</Button></a>
         </Col>
