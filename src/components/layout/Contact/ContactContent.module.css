@@ -4,20 +4,23 @@
 	height: 7rem;
 }
 .map {
-	/* margin-top: 5rem; */
 	margin: 5rem 3rem 0;
 }
-
 .icons {
 	font-size: 1.5rem;
 	color: #c97c5d;
 }
 .col1B {
-	padding-top: .5rem;
+	padding-left: 1rem;
+	display: inline;
+}
+
+.textAlign {
+	/* text-align: center; */
 }
 
 .contact {
-	margin: 3rem;
+	margin: 2rem 3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
 	font-size: .80rem;
@@ -30,6 +33,20 @@
 	color: rgb(83, 80, 80);
 }
 .bottomSpace {
-	margin-left: 2rem;
 	margin-bottom: 7rem;
+}
+
+@media screen and (max-width: 992px) {
+	.iframe {
+		padding: 0;
+	}
+	.map {
+		margin: 5rem 0 0;
+	}
+	.contact {
+		margin: 2rem 0;
+	}
+	.bottomSpace {
+		margin-top: 2rem;
+	}
 }
