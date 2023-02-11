@@ -6,6 +6,9 @@
 .map {
 	margin: 5rem 3rem 0;
 }
+.iframe {
+	height: 15rem;
+}
 .icons {
 	font-size: 1.5rem;
 	color: #c97c5d;

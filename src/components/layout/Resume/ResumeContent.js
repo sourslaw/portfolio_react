@@ -10,9 +10,10 @@ function ResumeContent(props) {
 		<Container fluid className={classes.container}>
 			<div className={classes.headingCard}>resume</div>
 
-			<Container className={classesMore.container}>
+			<Container>
 				<Row className={classesMore.mainRow}>
-					<Col className={classesMore.colBump}  xs lg="4">
+
+					<Col className={classesMore.colBump} xs={12} lg={4}>
 						<h1 className={classesMore.h1Bump}>education</h1>
 						{props.contents.slice(5,8).map((content) => 
 							<ResumeItem 
@@ -24,7 +25,8 @@ function ResumeContent(props) {
 							/>
 						)}
 					</Col>
-					<Col >
+
+					<Col>
 						<h1>experience</h1>
 						{props.contents.slice(0,5).map((content) => 
 							<ResumeItem 
@@ -37,6 +39,7 @@ function ResumeContent(props) {
 							/>
 						)}
 					</Col>
+
 				</Row>
 			</Container>
 			

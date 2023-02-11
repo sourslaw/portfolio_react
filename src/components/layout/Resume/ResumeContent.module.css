@@ -1,6 +1,7 @@
-.container {
+/* .container {
   margin-top: 5rem;
-}
+} */
+
 .mainRow {
   display: flex;
   flex-direction: row;
@@ -18,4 +19,12 @@
 }
 .h1Bump {
 	margin-left: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+	.mainRow {
+		margin: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
