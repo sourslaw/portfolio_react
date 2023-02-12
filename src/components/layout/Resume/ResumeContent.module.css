@@ -1,7 +1,6 @@
 .container {
   margin-top: 5rem;
 }
-
 .mainRow {
   display: flex;
   flex-direction: row;
@@ -11,14 +10,8 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
 }
-.colOne {
-	background-color: greenyellow;
-}
-.colBump {
-	margin-right: 2.5rem;
-}
-.h1Bump {
-	margin-left: 2rem;
+.col1 {
+	
 }
 
 @media screen and (max-width: 992px) {

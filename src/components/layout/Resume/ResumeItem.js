@@ -6,7 +6,7 @@ import classes from './ResumeItem.module.css';
 function ResumeItem(props) {
 	return (
     <Row>
-			<Col className={classes.col1} >
+			<Col className={classes.col1}>
 			  <p className={classes.when}>{props.when}</p>
 			</Col>
 			<Col>

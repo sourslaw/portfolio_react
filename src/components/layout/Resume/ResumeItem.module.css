@@ -24,6 +24,6 @@
 .col1 {
 	width: 5px;
 	display: flex;
-	flex: 0 0 5.75rem;
+	flex: 0 0 7rem;
 	justify-content: flex-end;
 }
