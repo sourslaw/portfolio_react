@@ -13,7 +13,7 @@ function PortfolioContent(props) {
       <Container className={classesPort.container}>
         <div className={classesPort.mainRow}>
           <Row >
-            <Col className={classesPort.ul}>
+            {/* <Col className={classesPort.ul}> */}
               {props.contents.slice(0,2).map((content) => 
                 <PortfolioItem 
                   key={content.id}
@@ -25,10 +25,10 @@ function PortfolioContent(props) {
                   linkTwo={content.linkTwo}
                 />
               )}
-            </Col>
+            {/* </Col> */}
           </Row>
           <Row >
-            <Col className={classesPort.ul}>
+            {/* <Col className={classesPort.ul}> */}
               {props.contents.slice(2,4).map((content) => 
                 <PortfolioItem 
                   key={content.id}
@@ -40,10 +40,10 @@ function PortfolioContent(props) {
                   linkTwo={content.linkTwo}
                 />
               )}
-            </Col>
+            {/* </Col> */}
           </Row>
 					<Row >
-            <Col className={classesPort.ul}>
+            {/* <Col className={classesPort.ul}> */}
               {props.contents.slice(4,6).map((content) => 
                 <PortfolioItem 
                   key={content.id}
@@ -55,10 +55,10 @@ function PortfolioContent(props) {
                   linkTwo={content.linkTwo}
                 />
               )}
-            </Col>
+            {/* </Col> */}
           </Row>
           <Row >
-            <Col className={classesPort.ul}>
+            {/* <Col className={classesPort.ul}> */}
               {props.contents.slice(6,7).map((content) => 
                 <PortfolioItem 
                   key={content.id}
@@ -70,7 +70,7 @@ function PortfolioContent(props) {
                   linkTwo={content.linkTwo}
                 />
               )}
-            </Col>
+            {/* </Col> */}
           </Row>
         </div>
       </Container>
