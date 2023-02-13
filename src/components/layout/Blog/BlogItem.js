@@ -8,7 +8,8 @@ const BlogItem = (props) => {
 
   function blogPost() {
     return (
-      <Col md={{ span: 10, offset: 1 }}>
+      // <Col md={{ span: 10, offset: 1 }}>
+      <Col>
         {/* <Card style={{ width: '55rem' }} className={classes.card}> */}
         <Card className={classes.card}>
           <div className={classes.imageParent}>
