@@ -18,7 +18,7 @@ function AboutContent() {
           <div>Libraries Application Developer</div>
           <h1 className={classes.font}>scott lawan</h1>
           <p>Graduate degree and professional experience in information science and data management. Proven track record in team-building, mentorship, and project management. Passionate about problem solving, collaboration, and continuous learning.</p>
-          <a href="https://drive.google.com/file/d/12NNTVp1QhOEINZRFQ2smujnbTpq2hhE9/view?usp=sharing" target="blank"><Button variant="outline-secondary" className={classes.button}>download CV</Button></a>
+          <a href="https://drive.google.com/file/d/11rsesb55Ppy2YFBE7Sw88aCAkYhuJKeD/view?usp=share_link" target="blank"><Button variant="outline-secondary" className={classes.button}>download CV</Button></a>
           <a href='/contact'><Button variant="outline-secondary" className={classes.button}>contact</Button></a>
         </Col>
 
