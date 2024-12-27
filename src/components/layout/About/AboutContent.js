@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Button, Row, Col, Image } from "react-bootstrap";
-import classes from './AboutContent.module.css';
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
+import React from "react";
+import classes from './AboutContent.module.css';
 
 function AboutContent() {
   return (
@@ -18,7 +18,7 @@ function AboutContent() {
           <div>Libraries Application Developer</div>
           <h1 className={classes.font}>scott lawan</h1>
           <p>Graduate degree and professional experience in information science and data management. Proven track record in team-building, mentorship, and project management. Passionate about problem solving, collaboration, and continuous learning.</p>
-          <a href="https://drive.google.com/file/d/11rsesb55Ppy2YFBE7Sw88aCAkYhuJKeD/view?usp=share_link" target="blank"><Button variant="outline-secondary" className={classes.button}>download CV</Button></a>
+          <a href="https://drive.google.com/file/d/1SunNbuujd5lzVNsA9PA_-N1RyA7YTVNe/view?usp=sharing" target="blank"><Button variant="outline-secondary" className={classes.button}>download CV</Button></a>
           <a href='/contact'><Button variant="outline-secondary" className={classes.button}>contact</Button></a>
         </Col>
 

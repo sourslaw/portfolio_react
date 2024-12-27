@@ -1,7 +1,7 @@
-import React from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import classes from './Footer.module.css';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
+import React from "react";
+import classes from './Footer.module.css';
 
 function Footer() {
   return (
@@ -14,7 +14,7 @@ function Footer() {
         </Nav>
 
         <Nav className={classes.bitsCopyright}>
-          <p>&#169;2023 all rights reserved. scott lawan</p>
+          <p>&#169;2025 all rights reserved. scott lawan</p>
         </Nav>
       </Container>
 		</Navbar>
