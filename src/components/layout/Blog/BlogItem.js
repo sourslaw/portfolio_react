@@ -9,13 +9,10 @@ const BlogItem = (props) => {
   function blogPost() {
     return (
       // <Col md={{ span: 10, offset: 1 }}>
-      // Getting those thumbnails from Medium RSS Feed
-      // https://medium.com/@kartikyathakur/getting-those-thumbnails-from-medium-rss-feed-183f74aefa8c
       <Col>
         {/* <Card style={{ width: '55rem' }} className={classes.card}> */}
         <Card className={classes.card}>
           <div className={classes.imageParent}>
-
             <a href={`${link}`} target="_blank" rel="noreferrer"><Card.Img className={classes.image} variant="top" src={ getThumb(`${description}`) } /></a>
           </div>
           <Card.Body>
@@ -50,9 +47,11 @@ const BlogItem = (props) => {
     // console.log(date);
     return `Published: ${dateArray.join(".")}`;
   }
-  function getThumb(thumbnail) {
-    let src = thumbnail.toString().match(/<img[^>]+src="([^">]+)"/)[1]
-    return src
+  // Getting those thumbnails from Medium RSS Feed
+  // https://medium.com/@kartikyathakur/getting-those-thumbnails-from-medium-rss-feed-183f74aefa8c
+  function getThumb(src) {
+    let thumbnail = src.toString().match(/<img[^>]+src="([^">]+)"/)[1]
+    return thumbnail
   }
 
   return (
