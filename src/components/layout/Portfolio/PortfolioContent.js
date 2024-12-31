@@ -12,7 +12,12 @@ function PortfolioContent(props) {
 
       <Container className={classesPort.container}>
         <div className={classesPort.mainRow}>
-          {/* <Row> heading for these two rows </Row> */}
+          <h1>current projects</h1>
+          <Row class="mb-5">
+            <div>under construction . . .</div>
+          </Row>
+
+          <h1>past projects</h1>
           <Row >
             {/* <Col className={classesPort.ul}> */}
               {props.contents.slice(0,3).map((content) => 
