@@ -1,19 +1,22 @@
+import { Button, Card, Col } from "react-bootstrap";
+
 import React from "react";
-import { Col, Card, Button } from "react-bootstrap";
 import classes from './BlogItem.module.css'
 
-
 const BlogItem = (props) => {
-  const { title, link, thumbnail, content, pubDate } = props.blogData;
+  const { title, link, thumbnail, content, pubDate, description } = props.blogData;
 
   function blogPost() {
     return (
       // <Col md={{ span: 10, offset: 1 }}>
+      // Getting those thumbnails from Medium RSS Feed
+      // https://medium.com/@kartikyathakur/getting-those-thumbnails-from-medium-rss-feed-183f74aefa8c
       <Col>
         {/* <Card style={{ width: '55rem' }} className={classes.card}> */}
         <Card className={classes.card}>
           <div className={classes.imageParent}>
-            <a href={`${link}`} target="_blank" rel="noreferrer"><Card.Img className={classes.image} variant="top" src={`${thumbnail}`} /></a>
+
+            <a href={`${link}`} target="_blank" rel="noreferrer"><Card.Img className={classes.image} variant="top" src={ getThumb(`${description}`) } /></a>
           </div>
           <Card.Body>
             <Card.Title className={classes.title}>{truncateText(cleanTitle(title), 0, 20) + " . . ."}</Card.Title>
@@ -46,6 +49,10 @@ const BlogItem = (props) => {
     dateArray.push(year);
     // console.log(date);
     return `Published: ${dateArray.join(".")}`;
+  }
+  function getThumb(thumbnail) {
+    let src = thumbnail.toString().match(/<img[^>]+src="([^">]+)"/)[1]
+    return src
   }
 
   return (

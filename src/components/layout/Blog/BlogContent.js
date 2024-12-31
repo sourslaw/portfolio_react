@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import BlogItem from './BlogItem';
 import { Container, Row } from "react-bootstrap";
+import React, { useEffect, useState } from 'react';
+
+import BlogItem from './BlogItem';
 import classesBlog from './BlogContent.module.css';
 import classesHead from '../HeadingComponent.module.css';
-
 
 const BlogContent = () => {
   const rss2json = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40lawanasaurus";
