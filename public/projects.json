@@ -10,7 +10,7 @@
 	{
 		"title": "Mechanique Blog",
 		"description": "[MySql] [Express] [Handlebars] [Node]",
-		"descriptionTwo": "Web Application for a user who wants a blog site so that they can publish articles, blog posts, and their thoughts and opinions",
+		"descriptionTwo": "Web Application for a user who wants a blog site so that they can publish their thoughts and opinions",
 		"image": "https://github.com/sourslaw/Technology_Blog/blob/main/assets/images/screenshot.png?raw=true",
 		"link": "https://salty-plateau-85850.herokuapp.com/",
 		"linkTwo": "https://github.com/sourslaw/Technology_Blog"
@@ -26,7 +26,7 @@
 	{
 		"title": "Find A Beer",
 		"description": "[Javascript] [various APIs] [Pure.css]",
-		"descriptionTwo": "Web application for a traveler who wants to see the local microbreweries in a city as well as the nearby restrooms so that they may plan an outing",
+		"descriptionTwo": "Web application for a traveler who wants to see the local microbreweries and restrooms in a city",
 		"image": "https://github.com/sourslaw/Project_One/raw/main/assets/images/screenshot.png",
 		"link": "https://sourslaw.github.io/Find_A_Beer/",
 		"linkTwo": "https://github.com/sourslaw/Project_One"
@@ -34,7 +34,7 @@
 	{
 		"title": "Weather Dashboard",
 		"description": "[Javascript] [Bootstrap]",
-		"descriptionTwo": "Web application for a traveler who wants to see the weather outlook for multiple cities so that they are able to plan a trip accordingly",
+		"descriptionTwo": "Web application for a person who wants to see the weather outlook for multiple cities",
 		"image": "https://github.com/sourslaw/06_Weather_Dashboard/raw/main/Assets/Images/screenshot.png",
 		"link": "https://sourslaw.github.io/Weather_Dashboard/",
 		"linkTwo": "https://github.com/sourslaw/06_Weather_Dashboard"
@@ -42,7 +42,7 @@
 	{
 		"title": "Employee Tracker",
 		"description": "[Javascript] [Inquirer.js] [MySql]",
-		"descriptionTwo": "CLI for business owners who want to be able to view and manage their departments, roles, and employees so that they can organize and plan their business",
+		"descriptionTwo": "CLI for business owners who want to be able to view and manage their departments, roles, and employees",
 		"image": "https://github.com/sourslaw/Employee_Tracker/raw/main/assets/images/screenshot.png",
 		"link": "https://github.com/sourslaw/Employee_Tracker#installation",
 		"linkTwo": "https://github.com/sourslaw/Employee_Tracker"

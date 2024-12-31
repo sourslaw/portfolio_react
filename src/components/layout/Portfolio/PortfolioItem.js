@@ -1,12 +1,12 @@
-import React from "react";
-import { Col, Card, Button } from "react-bootstrap";
-import classes from './PortfolioItem.module.css';
+import { Button, Card, Col } from "react-bootstrap";
 
+import React from "react";
+import classes from './PortfolioItem.module.css';
 
 function PortfolioItem(props) {
   return (
 
-    <Col className={classes.col} xs={12} lg={6}>
+    <Col className={classes.col} xs={12} lg={4}>
       <Card  className={classes.card}>
         <div className={classes.imageParent}>
           <a href={props.link} target="_blank" rel="noreferrer"><Card.Img className={classes.image} variant="top" src={props.image} /></a>
