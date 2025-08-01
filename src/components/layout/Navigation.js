@@ -15,7 +15,7 @@ function Navigation() {
           <Nav>
             <Nav.Link href='/'>about</Nav.Link>
             <Nav.Link href='/resume'>resume</Nav.Link>
-            <Nav.Link href='/portfolio'>portfolio</Nav.Link>
+            <Nav.Link href='/portfolio'>pubs & pres</Nav.Link>
             <Nav.Link href='/blog'>blog</Nav.Link>
             <Nav.Link href='/contact'>contact</Nav.Link>
           </Nav>
